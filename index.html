@@ -12,7 +12,7 @@
   <header class="header">
     <img class="header__logo" src="./images/header-logo.svg" alt="Логотип">
     <ul class="header__lang-list">
-      <li class="header__lang-type"><a class="header__lang-link header__lang-link_Ru" href="#">Ru</a></li>
+      <li class="header__lang-type"><a class="header__lang-link header__lang-link_active" href="#">Ru</a></li>
       <li class="header__lang-type"><a class="header__lang-link" href="#">En</a></li>
     </ul>
   </header>
@@ -20,10 +20,10 @@
     <section class="lead">
       <h1 class="lead__title">Путешествия по России</h1>
       <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-      <a class="lead__images">
+      <figure class="lead__images">
         <img class="lead__image" src="./images/lead-image.svg" alt="Путешествие по России.">
         <p class="lead__caption">ваша полка — верхняя</p>
-      </a>
+      </figure>
     </section>
 
     <section class="intro">
@@ -34,11 +34,11 @@
         тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.
       </p>
       <ul class="intro__list">
-        <li>Часовых поясов 11</li>
-        <li>Объектов природного наследия ЮНЕСКО 12</li>
-        <li>Объектов культурного наследия ЮНЕСКО 16</li>
-        <li>Природных заповедников 105</li>
-        <li>Аэропортов 241</li>
+        <li>Часовых поясов <span class="intro__list-digit">11</span></li>
+        <li>Объектов природного наследия ЮНЕСКО <span class="intro__list-digit">12</span></li>
+        <li>Объектов культурного наследия ЮНЕСКО <span class="intro__list-digit">16</span></li>
+        <li>Природных заповедников <span class="intro__list-digit">105</span></li>
+        <li>Аэропортов <span class="intro__list-digit">241</span></li>
       </ul>
     </section>
 
@@ -162,8 +162,10 @@
         <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до Байкала на электричках.</p>
       </a>
     </section>
+  </main>
 
-    <section class="footer">
+  <section class="footer">
+    <nav class="footer__nav">
       <ul class="footer__list">
         <li><a class="footer__link" href="https://yandex.ru/maps">Карты</a></li>
         <li><a class="footer__link" href="https://yandex.ru/pogoda">Погода</a></li>
@@ -172,8 +174,8 @@
         <li><a class="footer__link" href="https://travel.yandex.ru">Путешествие</a></li>
       </ul>
       <p class="footer__copyright">&copy; 2020. Рузиев Рустам</p>
-    </section>
-  </main>
+    </nav>
+  </section>
 </body>
 
 </html>
